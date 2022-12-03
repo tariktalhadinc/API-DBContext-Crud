@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yMFAy9O2uqSWPQnPcQjmQSgwmeZ2c5J1jTkrQitI0zM=",
+  "Source": "PersonalService",
+  "BasePath": "_content/PersonalService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,44 @@
+﻿
+
+
+
+
+
+
+//mockPersonals Person = new mockPersonals
+    //{
+    //    Id = 1,
+    //    NationalId = "13595581052",
+    //    Name = "tarik talha",
+    //    Surname = "dinç",
+    //    Age = 20,
+    //    Salary = 5500,
+    //}
+
+
+    
+
+
+
+    //public class WeatherForecast
+    //{
+    //    public DateTime Date { get; set; }
+
+    //    public int TemperatureC { get; set; }
+
+    //    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
+    //    public string? Summary { get; set; }
+    //}
+
+    --
+
+            public void Add()
+        {
+            return;
+        }
+
+        public void Search()
+        {
+
+        }
