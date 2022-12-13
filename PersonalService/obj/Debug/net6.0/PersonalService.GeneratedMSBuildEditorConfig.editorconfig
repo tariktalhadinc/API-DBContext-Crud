@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PersonalService
 build_property.RootNamespace = PersonalService
-build_property.ProjectDir = C:\Users\t.dinc\Desktop\PersonalService\PersonalService\
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\t.dinc\Desktop\API-Crud-Operasyonlari\PersonalService\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\t.dinc\Desktop\PersonalService\PersonalService
+build_property.MSBuildProjectDirectory = C:\Users\t.dinc\Desktop\API-Crud-Operasyonlari\PersonalService
+=======
+build_property.ProjectDir = C:\Users\t.dinc\Desktop\C#\PersonalService\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\t.dinc\Desktop\C#\PersonalService
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
 build_property._RazorSourceGeneratorDebug = 

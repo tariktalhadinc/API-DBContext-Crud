@@ -1,71 +1,137 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PersonalService.Interfaces;
+<<<<<<< HEAD
+=======
 using System.Security.Cryptography.Xml;
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
 
 namespace PersonalService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PersonalsController : ControllerBase
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
+    public class PersonalControllers : ControllerBase
     {
-        private readonly PersonalDataContext _context;
+        private readonly IPersonalService _personalService;
 
-        public PersonalsController(PersonalDataContext context)
+        public PersonalControllers(IPersonalService personalService)
         {
-            _context = context;
+            _personalService = personalService;
+        }
+<<<<<<< HEAD
+        
+        private static List<Personal> mockPersonal = new()
+        {
+           new Personal
+           {
+               Id = 1,
+               NationalId = "13595581052",
+               Name = "Tarık Talha",
+               Surname = "DİNÇ",
+               Age = 20,
+               Salary = 5500,
+           },
+
+           new Personal()
+           {
+               Id = 2,
+               NationalId = "13595581054",
+               Name = "Görkem",
+               Surname = "Tekin",
+               Age = 20,
+               Salary = 7500,
+           }
+        };
+
+        [HttpGet]
+        [Route("PersonalList")]
+        public async Task<ActionResult<Personal>> GetPersonals()
+=======
+
+        [HttpGet]
+        [Route("ListPersonal")]
+        public async Task<ActionResult<Personal>> Get()
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
+        {
+            return Ok(_personalService.Get());
         }
 
         [HttpGet]
-        [Route("")]
+        [Route("SearchPersonal")]
 
-        public async Task<ActionResult<List<Personal>>> GetAsync()
+<<<<<<< HEAD
+        public async Task<ActionResult<Personal>> SearchPersonal(string nationalId)
         {
-            return Ok(await _context.Personals.ToListAsync());
-        }
-
-        [HttpGet]
-        [Route("{id}")]
-
-        public async Task<ActionResult<Personal>> Search(string id)
-        {
-            var Personal = await _context.Personals.FindAsync(id);
-            if (Personal == null)
+            var personel = _personalService.Search(nationalId);
+            
+            if (personel == null)
                 return BadRequest("No Data");
-            return Ok(Personal);
+        
+          return Ok(personel);
+        }
+        
+        [HttpPost]
+        [Route("AddPersonal")]
+        public async Task<ActionResult<bool>> AddPersonals(Personal personal)
+        {
+          var tempPersonel = personal;
+          _personalService.Add(tempPersonel);
+
+          return Ok(true);
+=======
+        public async Task<ActionResult<Personal>> Search(string nationalId)
+        {
+            var personel = _personalService.Search(nationalId);
+            if (personel == null)
+                return BadRequest("No Data");
+            return Ok(personel);
         }
 
         [HttpPost]
-        [Route("Add")]
-        public async Task<ActionResult<List<Personal>>> Add(Personal personal)
+        [Route("AddPersonal")]
+        public async Task<ActionResult<bool>> Add(Personal personal)
         {
-          _context.Personals.Add(personal);
-            await _context.SaveChangesAsync();
-
-            return Ok(await _context.Personals.ToListAsync());
+            var tempPersonel = personal;
+            _personalService.Add(tempPersonel);
+            return Ok(true);
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
         }
 
         [HttpPut]
-        [Route("Update")]
-        public async Task<ActionResult<List<Personal>>> Update(Personal request)
+        [Route("UpdatePersonal")]
+<<<<<<< HEAD
+        public async Task<ActionResult<Personal>> UpdatePersonals(Personal request)
+        { 
+            _personalService.Update(request.NationalId);
+          return Ok();
+=======
+        public async Task<ActionResult<Personal>> Update(Personal request)
         {
-          var Personal = await _context.Personals.FindAsync(request.Id);
-          if (Personal == null)
-              return BadRequest("No personal Data");
-          Personal.Name = request.Surname;
-          Personal.Surname = request.Name;
-          Personal.Salary = request.Salary;
-            return Ok(await _context.Personals.ToListAsync());
+            _personalService.Update(request);
+            return BadRequest("No personal Data");
+            return Ok();
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
         }
 
         [HttpDelete]
-        [Route("Delete")]
-        public async Task<ActionResult<List<Personal>>> Delete(int id)
+        [Route("DeletePersonal")]
+<<<<<<< HEAD
+        public async Task<ActionResult<Personal>> DeletePersonals(Personal request)
         {
-            var personal = await _context.Personals.FindAsync(id);
-            if (personal == null)
-                return BadRequest("No Data");
-
-            _context.Personals.Remove(personal);
-          return Ok(personal);
+            _personalService.Delete(request.Id);
+            
+          return Ok();
         }   
+=======
+        public async Task<ActionResult<Personal>> Delete(Personal request)
+        {
+            _personalService.Delete(request);
+            return Ok();
+        }
+>>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
     }
 }
