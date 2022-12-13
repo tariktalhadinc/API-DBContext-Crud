@@ -10,7 +10,7 @@ using PersonalService.Data;
 
 namespace PersonalService.Migrations
 {
-    [DbContext(typeof(PersonalDataContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20221201133831_CreateInitial")]
     partial class CreateInitial
     {

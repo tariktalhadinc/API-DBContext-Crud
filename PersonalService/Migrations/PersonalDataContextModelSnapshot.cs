@@ -9,7 +9,7 @@ using PersonalService.Data;
 
 namespace PersonalService.Migrations
 {
-    [DbContext(typeof(PersonalDataContext))]
+    [DbContext(typeof(DataContext))]
     partial class PersonalDataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

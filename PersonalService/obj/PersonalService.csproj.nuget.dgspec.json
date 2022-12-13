@@ -1,31 +1,17 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\t.dinc\\Desktop\\API-Crud-Operasyonlari\\PersonalService\\PersonalService.csproj": {}
+    "C:\\Users\\t.dinc\\Desktop\\PersonalService\\PersonalService\\PersonalService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t.dinc\\Desktop\\API-Crud-Operasyonlari\\PersonalService\\PersonalService.csproj": {
+    "C:\\Users\\t.dinc\\Desktop\\PersonalService\\PersonalService\\PersonalService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t.dinc\\Desktop\\API-Crud-Operasyonlari\\PersonalService\\PersonalService.csproj",
+        "projectUniqueName": "C:\\Users\\t.dinc\\Desktop\\PersonalService\\PersonalService\\PersonalService.csproj",
         "projectName": "PersonalService",
-        "projectPath": "C:\\Users\\t.dinc\\Desktop\\API-Crud-Operasyonlari\\PersonalService\\PersonalService.csproj",
+        "projectPath": "C:\\Users\\t.dinc\\Desktop\\PersonalService\\PersonalService\\PersonalService.csproj",
         "packagesPath": "C:\\Users\\t.dinc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t.dinc\\Desktop\\API-Crud-Operasyonlari\\PersonalService\\obj\\",
-=======
-    "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj",
-        "projectName": "PersonalService",
-        "projectPath": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj",
-        "packagesPath": "C:\\Users\\t.dinc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\obj\\",
->>>>>>> 99ca99b0a69a88f57a1f2215384a7523e561c01f
+        "outputPath": "C:\\Users\\t.dinc\\Desktop\\PersonalService\\PersonalService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\t.dinc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +40,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

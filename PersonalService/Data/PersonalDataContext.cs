@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PersonalService.Model;
 
 namespace PersonalService.Data
 {
-    public class PersonalDataContext : DbContext
+    public class DataContext : DbContext
     {
-        public PersonalDataContext(DbContextOptions<PersonalDataContext> options) : base(options) { }
-
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<Personal> Personals { get; set; }
     }
 }
