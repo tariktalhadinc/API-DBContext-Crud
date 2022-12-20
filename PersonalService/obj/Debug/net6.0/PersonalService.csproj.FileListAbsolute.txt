@@ -122,3 +122,9 @@ C:\Users\t.dinc\Desktop\PersonalService\PersonalService\obj\Debug\net6.0\staticw
 C:\Users\t.dinc\Desktop\PersonalService\PersonalService\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PersonalService.props
 C:\Users\t.dinc\Desktop\PersonalService\PersonalService\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PersonalService.props
 C:\Users\t.dinc\Desktop\PersonalService\PersonalService\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\t.dinc\Desktop\PersonalService\PersonalService\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
